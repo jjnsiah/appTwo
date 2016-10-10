@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>COLLATE</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+
+		<link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+
+		<script>
+			var userAgent = navigator.userAgent + '';
+			if (userAgent.indexOf('iPhone') > -1) {
+				document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+				var mobile_system = 'iphone';
+			} else if (userAgent.indexOf('Android') > -1) {
+				document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+				var mobile_system = 'android';
+			} else {
+				var mobile_system = '';
+			}
+		</script>
+
+		<script src="js/lib/jquery.js"></script>
+		<!-- your scripts here -->
+		<script src="js/app/app.js"></script>
+		<script src="js/app/bootstrap.js"></script>
+		<script src="js/lib/jquery.mobile.js"></script>
+		<style>
+			.ui-selectmenu.ui-popup .ui-input-search {
+				margin-left: .5em;
+				margin-right: .5em;
+			}
+			.ui-selectmenu.ui-dialog .ui-content {
+				padding-top: 0;
+			}
+			.ui-selectmenu.ui-dialog .ui-selectmenu-list {
+				margin-top: 0;
+			}
+			.ui-selectmenu.ui-popup .ui-selectmenu-list li.ui-first-child .ui-btn {
+				border-top-width: 1px;
+				-webkit-border-radius: 0;
+				border-radius: 0;
+			}
+			.ui-selectmenu.ui-dialog .ui-header {
+				border-bottom-width: 1px;
+			}
+			a {
+				text-decoration: none;
+			}
+		</style>
+
+	</head>
+	<body>
+
+		<div data-role="page" id="landingPage" style="background: white">
+
+			<div data-role="header" style="text-shadow: none">
+					<h1>ASHESI</h1>
+
+			</div><!-- /header -->
+			<img src = "Ashesi_1.jpg" width="100%" left="20%"/>
+			<div data-role="content" style="text-shadow: none">
+				<h3 >Welcome to Ashesi's Campus </h3>
+				<p>Set on 100 stunning acres in Berekuso, overlooking Ghana's capital city of Accra,
+					 we have united traditional design, modern technology and environmental best practices
+					 - creating an inspiring base for young Africans
+					from diverse backgrounds to live, collaborate and study together for generations to come.
+				 Ashesi University, making Africa's Future Brighter.</p>
+				 <br />
+				 <p>Use the button below to get familiar with our departmental blocks...</p>
+
+				<a href="#departments" data-transition="pop"  data-role="button" data-transition='slide'>
+					Departments
+				</a>
+				<br />
+
+			</div><!-- /content -->
+			<div data-role="footer">
+	 <h1>(Copy Right) Ashesi Univeristy </h1>
+ </div>
+		</div><!-- /page -->
+		<div data-role="page" id="departments" style="background: white">
+
+			<div data-role="header" style="text-shadow: none">
+				<h1>LOCATION BLOCKS</h1>
+				<a href="index.html" data-role="button" data-icon="arrow-l" data-iconpos="notext" style="background: white;border: none;"></a>
+				<img src = "aerial.jpg" width="100%" left="20%"/>
+			</div><!-- /header -->
+
+			<div data-role="content" style="text-shadow: none">
+				<h3>BELOW ARE THE VARIOUS DEPARTMENTAL BLOCKS ON ASHESI CAMPUS </h3>
+				<a href="#adm"   data-role="button" data-transition='fade'>
+					Admission
+				</a>
+				<a href="#lib"   data-role="button" data-transition='flow'>
+					Library
+				</a>
+				<a href="#labs"   data-role="button" data-transition='slidedown'>
+					Labs
+				</a>
+				<a href="#eng"   data-role="button" data-transition='slidefade'>
+					Engineering
+				</a>
+
+				<a href="#host"   data-role="button" data-transition='turn'>
+					Hostel
+				</a>
+				<br />
+				<div data-role="footer">
+		 <h1>(Copy Right) Ashesi Univeristy </h1>
+	 </div>
+			</div><!-- /content -->
+		</div><!-- /page -->
+
+		<div data-role="page" id="adm" style="background: white">
+
+			<div data-role="header" style="text-shadow: none">
+				<h5>ADMIN BLOCK</h5>
+				<a href="#departments" data-role="button" data-icon="arrow-l" data-iconpos="notext" style="background: white;border: none;"></a>
+					<img src = "admin.jpg" width="100%" left="20%"/>
+			</div><!-- /header -->
+
+			<div data-role="content" style="text-shadow: none">
+				<p> The admission block is the location of the office of the president and other prestitious personnel in the school.
+				As the name suggests, it has the offices of all officials in charge of admission. Additionally, the Business Administration department offices are also found on this same block. </p>
+
+			</div>
+
+		</div>
+
+
+		<div data-role="page" id="lib" style="background: white">
+
+			<div data-role="header" style="text-shadow: none">
+				<h5>LIBRARY </h5>
+				<a href="#departments" data-role="button" data-icon="arrow-l" data-iconpos="notext" style="background: white;border: none;"></a>
+					<img src = "lib.jpg" width="100%" left="20%"/>
+			</div><!-- /header -->
+
+			<div data-role="content" style="text-shadow: none">
+				<p>Ashesi's library is primarily digital, with subscriptions to a number of electronic information
+					resources, including the PERI databases which give access to over 30,000 scholarly journals.
+					Ashesi's library is not limited to the library building; it reaches out, with cutting edge information,
+					into faculty and administrative offices, classrooms, cafeterias, and even outdoor gathering spaces.
+					The electronic library is supplemented by a paper collection that is currently 24,000 volumes,
+					as well as a variety of international and local magazines, newspapers, and research publications </p>
+
+			</div>
+
+		</div>
+
+		<div data-role="page" id="labs" style="background: white">
+
+			<div data-role="header" style="text-shadow: none">
+				<h5>LABS</h5>
+				<a href="#departments" data-role="button" data-icon="arrow-l" data-iconpos="notext" style="background: white;border: none;"></a>
+					<img src = "lab.jpg" width="100%" left="20%"/>
+			</div><!-- /header -->
+
+			<div data-role="content" style="text-shadow: none">
+				<p>
+					For computer science and engineering majors, this block is home.
+					This is where they have their course lab and lecture sessions.
+					For the best internet access in the school, that is the right place to be.
+					The labs are also equipped with top notch technological equipment to assist students to study.
+				</p>
+
+			</div>
+
+		</div>
+		<div data-role="page" id="eng" style="background: white">
+
+			<div data-role="header" style="text-shadow: none">
+				<h5>ENGINEERING</h5>
+				<a href="#departments" data-role="button" data-icon="arrow-l" data-iconpos="notext" style="background: white;border: none;"></a>
+					<img src = "eng.jpg" width="100%" left="20%"/>
+			</div><!-- /header -->
+
+			<div data-role="content" style="text-shadow: none">
+				<p> This block host Ashesi’s new engineering majors – Computer Engineering, Electrical and
+					Electronic Engineering, and Mechanical Engineering – which places emphasis on hands-on learning,
+					entrepreneurship, design and problem solving,to equip students with skills to create long-term solutions
+					to Africa’s engineering challenges and deploy better-designed infrastructure for local needs. This block also
+					hosts the lecturers in the engineering department. </p>
+			</div>
+
+		</div>
+
+
+
+		<div data-role="page" id="host" style="background: white">
+
+			<div data-role="header" style="text-shadow: none">
+				<h5>HOSTELS</h5>
+				<a href="#departments" data-role="button" data-icon="arrow-l" data-iconpos="notext" style="background: white;border: none;"></a>
+					<img src = "host.jpg" width="100%" left="20%"/>
+			</div><!-- /header -->
+
+			<div data-role="content" style="text-shadow: none">
+				<p>
+					To provide positive living experiences, Ashesi has twenty-two apartments,
+					spread within two main residence halls, that houses approximately 400 students.
+					The apartments have options for five,four and two people in a room, which are assigned on a lottery basis to avoid bias.
+					To help make residential life easier, each hall has Residence Assistants (RAs) -
+					student leaders selected by the Student Affairs Office - to provide extended
+					support to students. RAs work to promote a friendly atmosphere of social interaction
+					 and create an environment that is conducive to academic study.
+				</p>
+				<br />
+				<br />
+			</div>
+
+		</div>
+</html>
